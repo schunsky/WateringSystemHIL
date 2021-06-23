@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name WateringSystemHIL)(type Legacy)(uri ${KIPRJMOD}/parts/WateringSystemHIL.lib)(options "")(descr ""))
+)
