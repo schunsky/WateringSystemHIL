@@ -1,9 +1,9 @@
-(module "P100-E2 Pogo Spring Test Probe Pin" (layer F.Cu) (tedit 60D05BD3)
+(module "P100-E2 Pogo Spring Test Probe Pin" (layer F.Cu) (tedit 60E30DB5)
   (fp_text reference TP** (at 0 -2.2) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value "P100-E2 Pogo Spring Test Probe Pin" (at 0 2.3) (layer F.Fab) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (pad 1 thru_hole circle (at 0 0) (size 2.1 2.1) (drill 1.6) (layers *.Cu *.Mask))
+  (pad 1 thru_hole circle (at 0 0) (size 2.1 2.1) (drill 1.45) (layers *.Cu *.Mask))
 )
