@@ -220,12 +220,12 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR019
 U 1 1 60D6EF62
-P 6450 800
-F 0 "#PWR019" H 6450 650 50  0001 C CNN
-F 1 "+5V" H 6465 973 50  0000 C CNN
-F 2 "" H 6450 800 50  0001 C CNN
-F 3 "" H 6450 800 50  0001 C CNN
-	1    6450 800 
+P 5750 1000
+F 0 "#PWR019" H 5750 850 50  0001 C CNN
+F 1 "+5V" H 5765 1173 50  0000 C CNN
+F 2 "" H 5750 1000 50  0001 C CNN
+F 3 "" H 5750 1000 50  0001 C CNN
+	1    5750 1000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -333,28 +333,6 @@ F 3 "" H 4350 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R7
-U 1 1 60DBDBF7
-P 6450 1250
-F 0 "R7" H 6300 1300 50  0000 L CNN
-F 1 "10k" H 6250 1200 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6450 1250 50  0001 C CNN
-F 3 "~" H 6450 1250 50  0001 C CNN
-	1    6450 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R6
-U 1 1 60DD1C97
-P 6200 1450
-F 0 "R6" V 6300 1450 50  0000 C CNN
-F 1 "100" V 6400 1450 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6200 1450 50  0001 C CNN
-F 3 "~" H 6200 1450 50  0001 C CNN
-	1    6200 1450
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:Ferrite_Bead_Small FB2
 U 1 1 60DE6AB0
 P 3950 5900
@@ -385,7 +363,7 @@ L Device:R_Small R10
 U 1 1 60CD396B
 P 7400 1300
 F 0 "R10" V 7204 1300 50  0000 C CNN
-F 1 "10k" V 7295 1300 50  0000 C CNN
+F 1 "100" V 7295 1300 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7400 1300 50  0001 C CNN
 F 3 "~" H 7400 1300 50  0001 C CNN
 	1    7400 1300
@@ -449,17 +427,6 @@ Wire Wire Line
 Wire Wire Line
 	7500 1400 7550 1400
 $Comp
-L Amplifier_Operational:LMV321 U4
-U 1 1 60CEC5D1
-P 9350 1450
-F 0 "U4" H 9450 1350 50  0000 L CNN
-F 1 "LMV321" H 9350 1250 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 9350 1450 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lmv324.pdf" H 9350 1450 50  0001 C CNN
-	1    9350 1450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R8
 U 1 1 60D30F7A
 P 7100 1350
@@ -470,12 +437,12 @@ F 3 "~" H 7100 1350 50  0001 C CNN
 	1    7100 1350
 	-1   0    0    1   
 $EndComp
-Text GLabel 5700 1450 0    50   Input ~ 0
+Text GLabel 5700 1350 0    50   Input ~ 0
 CTL_POWER
 Text GLabel 7450 5650 0    50   Input ~ 0
 CTL_BOOT
 Wire Wire Line
-	5700 1450 5800 1450
+	5700 1350 5800 1350
 Text GLabel 4850 3300 2    50   Input ~ 0
 CTL_POWER
 Text GLabel 4850 3800 2    50   Input ~ 0
@@ -519,11 +486,11 @@ Text GLabel 4850 3600 2    50   Input ~ 0
 Encoder_PINB
 Text GLabel 4850 4400 2    50   Input ~ 0
 Encoder_SW
-Text GLabel 8400 5350 0    50   Input ~ 0
-Encoder_PINA
 Text GLabel 8400 5450 0    50   Input ~ 0
-Encoder_PINB
+Encoder_PINA
 Text GLabel 8400 5550 0    50   Input ~ 0
+Encoder_PINB
+Text GLabel 8400 5350 0    50   Input ~ 0
 Encoder_SW
 Text GLabel 3250 4600 0    50   Input ~ 0
 Motor_SW
@@ -589,68 +556,13 @@ Wire Wire Line
 	8400 1350 8700 1350
 Wire Wire Line
 	8700 1350 8700 1400
-$Comp
-L power:GND #PWR031
-U 1 1 60E7365F
-P 9250 2000
-F 0 "#PWR031" H 9250 1750 50  0001 C CNN
-F 1 "GND" H 9400 1900 50  0000 C CNN
-F 2 "" H 9250 2000 50  0001 C CNN
-F 3 "" H 9250 2000 50  0001 C CNN
-	1    9250 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9250 1750 9250 2000
-Wire Wire Line
-	9050 1550 9050 1800
-Wire Wire Line
-	9050 1800 9650 1800
-Wire Wire Line
-	9650 1800 9650 1450
-$Comp
-L Device:C_Small C5
-U 1 1 60E7A1C3
-P 9450 1100
-F 0 "C5" V 9221 1100 50  0000 C CNN
-F 1 "0.1u" V 9312 1100 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 9450 1100 50  0001 C CNN
-F 3 "~" H 9450 1100 50  0001 C CNN
-	1    9450 1100
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR033
-U 1 1 60E7B7BA
-P 9650 1150
-F 0 "#PWR033" H 9650 900 50  0001 C CNN
-F 1 "GND" H 9800 1050 50  0000 C CNN
-F 2 "" H 9650 1150 50  0001 C CNN
-F 3 "" H 9650 1150 50  0001 C CNN
-	1    9650 1150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9250 1150 9250 1100
-Wire Wire Line
-	9350 1100 9250 1100
-Connection ~ 9250 1100
-Wire Wire Line
-	9250 1100 9250 1050
-Wire Wire Line
-	9550 1100 9650 1100
-Wire Wire Line
-	9650 1100 9650 1150
 Wire Wire Line
 	8700 1350 9050 1350
 Connection ~ 8700 1350
 Text GLabel 4900 6550 2    50   Input ~ 0
 DUT_CURR
-Text GLabel 9850 1450 2    50   Input ~ 0
+Text GLabel 9050 1350 2    50   Input ~ 0
 DUT_CURR
-Wire Wire Line
-	9850 1450 9650 1450
-Connection ~ 9650 1450
 Wire Wire Line
 	7100 1150 7100 1250
 Wire Wire Line
@@ -679,9 +591,9 @@ F 3 "" H 7650 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 8750 7650 0    50   ~ 0
-05.07.2021
+21.08.2021
 Text Notes 10750 7650 0    50   ~ 0
-0.91
+1.00
 $Comp
 L Device:LED_Small D4
 U 1 1 60F731F8
@@ -871,17 +783,6 @@ F 3 "" H 8000 900 50  0001 C CNN
 	1    8000 900 
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR030
-U 1 1 6111C955
-P 9250 1050
-F 0 "#PWR030" H 9250 900 50  0001 C CNN
-F 1 "+3.3V" H 9265 1223 50  0000 C CNN
-F 2 "" H 9250 1050 50  0001 C CNN
-F 3 "" H 9250 1050 50  0001 C CNN
-	1    9250 1050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2000 1400 2150 1400
 Wire Wire Line
@@ -903,16 +804,16 @@ $EndComp
 $Comp
 L power:PWR_FLAG #FLG04
 U 1 1 61124723
-P 6750 800
-F 0 "#FLG04" H 6750 875 50  0001 C CNN
-F 1 "PWR_FLAG" H 6750 973 50  0000 C CNN
-F 2 "" H 6750 800 50  0001 C CNN
-F 3 "~" H 6750 800 50  0001 C CNN
-	1    6750 800 
+P 6050 1000
+F 0 "#FLG04" H 6050 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 6050 1173 50  0000 C CNN
+F 2 "" H 6050 1000 50  0001 C CNN
+F 3 "~" H 6050 1000 50  0001 C CNN
+	1    6050 1000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6750 800  6450 800 
+	6050 1000 5750 1000
 $Comp
 L power:GND #PWR034
 U 1 1 6116D427
@@ -1100,28 +1001,6 @@ Wire Wire Line
 Connection ~ 7650 5650
 Wire Wire Line
 	9550 5650 9950 5650
-$Comp
-L Transistor_FET:AO3401A Q1
-U 1 1 60E5B505
-P 6650 1250
-F 0 "Q1" V 6992 1250 50  0000 C CNN
-F 1 "AO3401A" V 6901 1250 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6850 1175 50  0001 L CIN
-F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 6650 1250 50  0001 L CNN
-	1    6650 1250
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	6300 1450 6450 1450
-Wire Wire Line
-	6450 1350 6450 1450
-Connection ~ 6450 1450
-Wire Wire Line
-	6450 1450 6650 1450
-Wire Wire Line
-	6450 800  6450 1150
-Connection ~ 6450 800 
-Connection ~ 6450 1150
 Wire Wire Line
 	6850 1150 7100 1150
 Connection ~ 7100 1150
@@ -1195,45 +1074,39 @@ $EndComp
 $Comp
 L Device:LED_Small D6
 U 1 1 60E9DFB6
-P 5800 1550
-F 0 "D6" V 5846 1480 50  0000 R CNN
-F 1 "LED_Small" V 5755 1480 50  0001 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5800 1550 50  0001 C CNN
-F 3 "~" V 5800 1550 50  0001 C CNN
-	1    5800 1550
+P 5800 1450
+F 0 "D6" V 5846 1380 50  0000 R CNN
+F 1 "LED_Small" V 5755 1380 50  0001 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5800 1450 50  0001 C CNN
+F 3 "~" V 5800 1450 50  0001 C CNN
+	1    5800 1450
 	0    -1   -1   0   
 $EndComp
-Connection ~ 5800 1450
+Connection ~ 5800 1350
 Wire Wire Line
-	5800 1450 6100 1450
+	5800 1350 6050 1350
 $Comp
 L Device:R_Small R14
 U 1 1 60EA1998
-P 5800 1750
-F 0 "R14" H 5859 1796 50  0000 L CNN
-F 1 "10k" H 5859 1705 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5800 1750 50  0001 C CNN
-F 3 "~" H 5800 1750 50  0001 C CNN
-	1    5800 1750
+P 5800 1650
+F 0 "R14" H 5859 1696 50  0000 L CNN
+F 1 "10k" H 5859 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5800 1650 50  0001 C CNN
+F 3 "~" H 5800 1650 50  0001 C CNN
+	1    5800 1650
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR04
 U 1 1 60EA1D7B
-P 5800 1850
-F 0 "#PWR04" H 5800 1600 50  0001 C CNN
-F 1 "GND" H 5950 1750 50  0000 C CNN
-F 2 "" H 5800 1850 50  0001 C CNN
-F 3 "" H 5800 1850 50  0001 C CNN
-	1    5800 1850
+P 5800 1750
+F 0 "#PWR04" H 5800 1500 50  0001 C CNN
+F 1 "GND" H 5950 1650 50  0000 C CNN
+F 2 "" H 5800 1750 50  0001 C CNN
+F 3 "" H 5800 1750 50  0001 C CNN
+	1    5800 1750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8550 5350 8400 5350
-Wire Wire Line
-	8550 5450 8400 5450
-Wire Wire Line
-	8550 5550 8400 5550
 Wire Wire Line
 	8550 4950 8500 4950
 Wire Wire Line
@@ -1274,4 +1147,36 @@ $EndComp
 Wire Wire Line
 	10200 2800 10100 2800
 Connection ~ 10100 2800
+$Comp
+L Power_Management:AP2171W U5
+U 1 1 60FEB9B3
+P 6450 1250
+F 0 "U5" H 6450 1617 50  0000 C CNN
+F 1 "AP2151W" H 6450 1526 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6450 850 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP2161.pdf" H 6450 1300 50  0001 C CNN
+	1    6450 1250
+	1    0    0    -1  
+$EndComp
+Connection ~ 6050 1000
+Wire Wire Line
+	6050 1000 6050 1150
+NoConn ~ 6850 1350
+$Comp
+L power:GND #PWR018
+U 1 1 61005299
+P 6450 1550
+F 0 "#PWR018" H 6450 1300 50  0001 C CNN
+F 1 "GND" H 6600 1450 50  0000 C CNN
+F 2 "" H 6450 1550 50  0001 C CNN
+F 3 "" H 6450 1550 50  0001 C CNN
+	1    6450 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 5350 8550 5350
+Wire Wire Line
+	8400 5450 8550 5450
+Wire Wire Line
+	8400 5550 8550 5550
 $EndSCHEMATC
