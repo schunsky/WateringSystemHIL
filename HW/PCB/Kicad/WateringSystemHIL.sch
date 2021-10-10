@@ -19,7 +19,7 @@ U 1 1 60CC6EB2
 P 4050 3800
 F 0 "J3" H 3300 2550 50  0000 C CNN
 F 1 "Raspberry Pi Zero WH" H 2950 2450 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 4050 3800 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 4050 3800 50  0001 C CNN
 F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 4050 3800 50  0001 C CNN
 	1    4050 3800
 	-1   0    0    -1  
@@ -480,11 +480,11 @@ Connection ~ 3150 6450
 Wire Wire Line
 	2700 6550 2800 6550
 Connection ~ 2800 6550
-Text GLabel 3250 3700 0    50   Input ~ 0
-Encoder_PINA
 Text GLabel 4850 3600 2    50   Input ~ 0
-Encoder_PINB
+Encoder_PINA
 Text GLabel 4850 4400 2    50   Input ~ 0
+Encoder_PINB
+Text GLabel 3250 3700 0    50   Input ~ 0
 Encoder_SW
 Text GLabel 8400 5450 0    50   Input ~ 0
 Encoder_PINA
